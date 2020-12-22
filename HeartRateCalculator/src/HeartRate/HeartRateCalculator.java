@@ -22,12 +22,12 @@ public class HeartRateCalculator extends Application{
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("BMICalculator.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("HeartRateCalculator.fxml"));
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
 
-        stage.setTitle("BMI Calculator"); // Displayed in window's title bar
+        stage.setTitle("Target Heart Rate Calculator"); // Displayed in window's title bar
         stage.show();
     }
 }
