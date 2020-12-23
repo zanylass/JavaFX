@@ -19,32 +19,15 @@ public class TipCalculatorController {
     private static final NumberFormat percent = NumberFormat.getPercentInstance();
     private BigDecimal tipPercentage = new BigDecimal(0.15);
 
-    @FXML
-    private Label AmountLabel;
-
-    @FXML
-    private Label TipPercentageLabel;
-
-    @FXML
-    private Label TipLabel;
-
-    @FXML
-    private Label TotalLabel;
-
-    @FXML
-    private TextField AmountTextField;
-
-    @FXML
-    private Slider TipPercentageSlider;
-
-    @FXML
-    private TextField TipTextField;
-
-    @FXML
-    private TextField TotalTextField;
-
-    @FXML
-    private Button calculateButton;
+    @FXML private Label AmountLabel;
+    @FXML private Label TipPercentageLabel;
+    @FXML private Label TipLabel;
+    @FXML private Label TotalLabel;
+    @FXML private TextField AmountTextField;
+    @FXML private Slider TipPercentageSlider;
+    @FXML private TextField TipTextField;
+    @FXML private TextField TotalTextField;
+    @FXML private Button calculateButton;
 
     @FXML
     void calculateButtonPressed(ActionEvent event) {
