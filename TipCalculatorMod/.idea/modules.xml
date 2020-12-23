@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ColorChooserApp.iml" filepath="$PROJECT_DIR$/ColorChooserApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TipCalculatorMod.iml" filepath="$PROJECT_DIR$/TipCalculatorMod.iml" />
     </modules>
   </component>
 </project>
