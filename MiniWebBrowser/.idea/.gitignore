@@ -4,3 +4,5 @@
 # Datasource local storage ignored files
 /../../../../../../../../:\Users\gulmeeri.irfan\Documents\programming practice\JavaFX\MiniWebBrowser\.idea/dataSources/
 /dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
