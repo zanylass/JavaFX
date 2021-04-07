@@ -4,25 +4,32 @@ import javafx.beans.Observable;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.util.Callback;
+
+import java.time.LocalDate;
+
 import java.util.Objects;
 
 public class Person {
     private final StringProperty firstname = new SimpleStringProperty(this, "firstname", "");
     private final StringProperty lastname = new SimpleStringProperty(this, "lastname", "");
     private final StringProperty notes = new SimpleStringProperty(this, "notes", "sample notes");
-    private final StringProperty gender = new SimpleStringProperty(this, "gender", "");
+    private String gender;
+    private LocalDate bday;
+    private String imgPath;
 
+    public Person(){
+    };
 
-    public Person() {
-    }
-
-    public Person(String firstname, String lastname, String notes,String gender) {
+    public Person(String firstname, String lastname, String notes, String gender, LocalDate bday, String imgPath) {
         this.firstname.set(firstname);
         this.lastname.set(lastname);
         this.notes.set(notes);
-        this.gender.set(gender);
+        this.gender=gender;
+        this.bday = bday;
+        this.imgPath = imgPath;
     }
 
+    //setters and getters for firstname
     public String getFirstname() {
         return firstname.get();
     }
@@ -32,6 +39,8 @@ public class Person {
     public void setFirstname(String firstname) {
         this.firstname.set(firstname);
     }
+
+    //setters and getters for lastname
     public String getLastname() {
         return lastname.get();
     }
@@ -41,6 +50,8 @@ public class Person {
     public void setLastname(String lastname) {
         this.lastname.set(lastname);
     }
+
+    //setters and getters for notes
     public String getNotes() {
         return notes.get();
     }
@@ -51,19 +62,33 @@ public class Person {
     public void setNotes(String notes) {
         this.notes.set(notes);
     }
-    //getters and setters for gender
+
+    //setters and getters for gender
     public String getGender() {
-            return gender.get();
-        }
+        return gender;
+    }
 
-        public StringProperty genderProperty() {
-            return gender;
-        }
-        public void setGender(String gender) {
-            this.gender.set(gender);
-        }
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
-    //public LocalDate
+    //setters and getters for birth day
+    public void setBirthDate(LocalDate bday) {
+        this.bday = bday;
+    }
+
+    public LocalDate getBirthDate() {
+        return bday;
+    }
+
+    //setters and getters for image path
+    public String getImagePath() {
+         return imgPath;
+    }
+
+    public void setImagePath(String imgPath) {
+         this.imgPath = imgPath;
+    }
 
     @Override
     public String toString() {
@@ -77,12 +102,12 @@ public class Person {
         Person person = (Person) obj;
         return Objects.equals(firstname, person.firstname) &&
                 Objects.equals(lastname, person.lastname) &&
-                Objects.equals(notes, person.notes) ;
+                Objects.equals(notes, person.notes);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(firstname, lastname, notes, gender);
+        return Objects.hash(firstname, lastname, notes);
     }
 
     public static Callback<Person, Observable[]> extractor =
