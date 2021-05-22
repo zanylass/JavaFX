@@ -1,0 +1,9 @@
+C:\Users\gulmeeri.irfan\Documents\programming practice\JavaFX\PS3-CG\src\p2217\Kaleidoscope.java
+C:\Users\gulmeeri.irfan\Documents\programming practice\JavaFX\PS3-CG\src\p2217\KaleidoscopeController.java
+C:\Users\gulmeeri.irfan\Documents\programming practice\JavaFX\PS3-CG\src\p2219\DigitalClock.java
+C:\Users\gulmeeri.irfan\Documents\programming practice\JavaFX\PS3-CG\src\p2219\DigitalClockController.java
+C:\Users\gulmeeri.irfan\Documents\programming practice\JavaFX\PS3-CG\src\p2222\TextShadow.java
+C:\Users\gulmeeri.irfan\Documents\programming practice\JavaFX\PS3-CG\src\p2224\Shadows.java
+C:\Users\gulmeeri.irfan\Documents\programming practice\JavaFX\PS3-CG\src\p2224\ShadowsController.java
+C:\Users\gulmeeri.irfan\Documents\programming practice\JavaFX\PS3-CG\src\sample\Controller.java
+C:\Users\gulmeeri.irfan\Documents\programming practice\JavaFX\PS3-CG\src\sample\Main.java
