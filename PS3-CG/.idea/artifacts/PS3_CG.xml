@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="PS3-CG">
+    <output-path>$PROJECT_DIR$/out/artifacts/PS3_CG</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="p2222.TextShadow" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="PS3_CG.jar">
+        <element id="module-output" name="PS3-CG" />
+      </element>
+    </root>
+  </artifact>
+</component>
